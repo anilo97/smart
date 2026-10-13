@@ -95,3 +95,12 @@ main#app .report-card>.card .card-name{font-size:24px!important;margin:12px 0!im
 main#app .report-card>.card .barcode{height:26px;margin-top:20px}
 
 .lesson-menu{grid-column:1/-1;display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}.lesson-menu button{box-shadow:none;background:white;color:#76618d}.lesson-menu button.active{background:#8a70b6;color:white}.project-start{grid-column:1/-1;display:grid;grid-template-columns:1.2fr 1fr .8fr;gap:18px;align-items:stretch}.project-start>.panel{margin:0!important}.project-start .card{width:240px!important;max-width:100%!important;min-height:390px!important;padding:24px 18px!important;margin:16px auto!important}.project-start .avatar{width:96px;height:96px;margin:16px auto}.project-missions{padding-left:24px;line-height:2.2}.project-case{width:100%;text-align:left;margin:8px 0;background:white!important;color:#5b4579!important;box-shadow:none!important}.project-case.selected{border:2px solid #9573bb;background:#f0e8fc!important}.project-wide{grid-column:1/-1}.project-nav{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px}.project-check{display:flex;align-items:flex-start;gap:10px;margin:12px 0}.project-check input{width:20px;flex:none;margin:3px 0}.project-start h2{font-size:22px}.project-start p{line-height:1.8}.project-start .tag{display:block;margin-bottom:12px}@media(max-width:899px){.project-start{grid-template-columns:1fr}.project-start>.panel{height:auto!important;overflow:visible!important}.project-nav button{flex:1}.project-start .card{margin:20px auto!important}}
+
+/* Explicit arrival heading placement prevents automatic grid placement below cards. */
+main#app:has(#start)>.arrival-heading{grid-column:1/-1!important;grid-row:1!important;order:-1!important;align-self:start!important}
+main#app .stage-navigation{grid-column:1/-1;display:flex!important;justify-content:space-between!important;align-items:center;gap:14px;width:100%;margin-top:18px}
+main#app .stage-navigation button{flex:none!important;width:auto!important}
+main#app .stage-navigation button:last-child{margin-left:auto}
+.project-missions{list-style:none;counter-reset:mission;padding-left:0;line-height:1.8}
+.project-missions li{counter-increment:mission;display:flex;gap:10px;margin:12px 0}
+.project-missions li::before{content:counter(mission, circled-decimal);flex:none;color:#8060a4;font-weight:700}
