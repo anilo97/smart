@@ -1,1 +1,135 @@
-<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>스마트스토어 AI 운영팀의 하루</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css"><link rel="stylesheet" href="./styles.css"><span id="status" hidden aria-hidden="true"></span><main id="app"></main><script src="./app.js"></script></html>
+<section class="project-guide" aria-labelledby="project-guide-title">
+  <div class="project-guide__header">
+    <span class="project-guide__badge">2차시</span>
+    <h2 id="project-guide-title">프로젝트 진행 순서</h2>
+  </div>
+
+  <ol class="project-guide__steps">
+    <li>
+      <span class="project-guide__number" aria-hidden="true">1</span>
+      <span>프로젝트 선택 · 자료 확인</span>
+    </li>
+    <li>
+      <span class="project-guide__number" aria-hidden="true">2</span>
+      <span>모호한 지시 → 프롬프트 개선</span>
+    </li>
+    <li>
+      <span class="project-guide__number" aria-hidden="true">3</span>
+      <span>변수 하나 변경 · 결과 비교</span>
+    </li>
+    <li>
+      <span class="project-guide__number" aria-hidden="true">4</span>
+      <span>출력 형식 지정 · 초안 저장</span>
+    </li>
+    <li>
+      <span class="project-guide__number" aria-hidden="true">5</span>
+      <span>검증 및 보안</span>
+    </li>
+    <li>
+      <span class="project-guide__number" aria-hidden="true">6</span>
+      <span>최종안 완성 → 팀장 보고 · 패들렛 제출</span>
+    </li>
+  </ol>
+
+  <p class="project-guide__promotion">
+    프로젝트를 끝내면 <strong>대리 → 과장</strong>으로 승진합니다.
+  </p>
+</section>
+
+<style>
+  .project-guide {
+    box-sizing: border-box;
+    width: 100%;
+    padding: clamp(18px, 3vw, 30px);
+    border: 1px solid #dce6ee;
+    border-radius: 20px;
+    background: #ffffff;
+    color: #193653;
+    font-family: inherit;
+  }
+
+  .project-guide *,
+  .project-guide *::before,
+  .project-guide *::after {
+    box-sizing: border-box;
+  }
+
+  .project-guide__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .project-guide__badge {
+    flex-shrink: 0;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #e0f3ed;
+    color: #167c68;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .project-guide__header h2 {
+    margin: 0;
+    font-size: clamp(20px, 2.3vw, 28px);
+    line-height: 1.35;
+    font-weight: 700;
+  }
+
+  .project-guide__steps {
+    display: grid;
+    gap: 9px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .project-guide__steps li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: #f3f7fb;
+    font-size: clamp(15px, 1.7vw, 18px);
+    line-height: 1.5;
+  }
+
+  .project-guide__number {
+    display: grid;
+    flex: 0 0 30px;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #244f7c;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .project-guide__steps li:last-child {
+    background: #eaf6f0;
+  }
+
+  .project-guide__steps li:last-child .project-guide__number {
+    background: #167c68;
+  }
+
+  .project-guide__promotion {
+    margin: 18px 0 0;
+    padding: 13px 16px;
+    border-radius: 12px;
+    background: #193f66;
+    color: #ffffff;
+    text-align: center;
+    font-size: clamp(15px, 1.7vw, 18px);
+    line-height: 1.5;
+  }
+
+  .project-guide__promotion strong {
+    color: #9debd2;
+  }
+</style>
